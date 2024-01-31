@@ -9,20 +9,18 @@ spec:
    minReadySeconds: 1 
    replicas: 3
    selector: 
-     matchExpressions: 
-       - key:  activity
-         operator: IN 
-         values: 
-           - Exercise 1 
-             Exercise 2
+     matchLabels:
+       app: alpine 
+             
      template: 
-     metadata:  
-       labels:
-         activity: exerc1
+       metadata:  
+         labels:
+           app: alpine
        spec: 
          containers: 
            - name: incoma 
              image: alpine 
+
              
 
        
