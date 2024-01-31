@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: 	ReplicaSet
+metadata: 
+  name: exerc1 
+  labels:  
+     app: exerc1 
+spec: 
+   minReadySeconds: 1 
+   replicas: 3
+   selector: 
+     matchExpressions: 
+       - key:  activity
+         operator: IN 
+         values: 
+           - Exercise 1 
+             Exercise 2
+     template: 
+     metadata:  
+       labels:
+         activity: exerc1
+       spec: 
+         containers: 
+           - name: incoma 
+             image: alpine 
+             
+
+       
+     
+
+             
