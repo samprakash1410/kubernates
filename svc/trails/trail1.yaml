@@ -32,7 +32,7 @@ metadata:
 spec:
   selector:
     app: nginx
-  ports: 
+  port: 
     - targetPort: 80
 
 
