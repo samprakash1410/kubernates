@@ -10,7 +10,7 @@ spec:
   replicas: 3 
   selector: 
     matchLabel: 
-    app: nginx
+      app: nginx
   template: 
     metadata:  
        labels: 
@@ -32,8 +32,9 @@ metadata:
 spec:
   selector:
     app: nginx
-  port: 
+  ports: 
     - targetPort: 80
+      port: 80
 
 
    
