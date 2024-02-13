@@ -1,0 +1,24 @@
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: sample-cj
+spec:
+  schedule: "* * * * *"
+  jobTemplate:
+    metadata:
+      name: sample-job
+    spec:
+      template:
+        metadata:
+          name: sample-pod
+          labels:
+            app: job
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: sample-ctr
+              image: alpine
+              args:
+                - sleep
+                - 30s
