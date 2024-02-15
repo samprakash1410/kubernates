@@ -8,7 +8,7 @@ metadata:
     env: dev
 spec: 
   nodeSelector: 
-    env: dev 
+    test: prod 
   containers:
   - name: web 
     image: nginx 
