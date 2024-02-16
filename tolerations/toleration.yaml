@@ -5,7 +5,9 @@ metadata:
   name: toleration
   labels:
     name: toleration
-spec:
+spec: 
+  tolerations: 
+    - key: team
   containers:
   - name: toleration
     image: nginx
