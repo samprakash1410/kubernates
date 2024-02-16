@@ -8,6 +8,9 @@ metadata:
 spec: 
   tolerations: 
     - key: team
+      operator: equal
+      value: devops
+      effort: noschedule
   containers:
   - name: toleration
     image: nginx
