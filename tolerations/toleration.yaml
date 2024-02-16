@@ -6,11 +6,11 @@ metadata:
   labels:
     name: toleration
 spec: 
-  tolerations: 
+  tolerations:
     - key: team
-      operator: equal
+      operator: Equal
       value: devops
-      effort: noschedule
+      effect: NoSchedule
   containers:
   - name: toleration
     image: nginx
