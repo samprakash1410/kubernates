@@ -25,8 +25,8 @@ spec:
      - name: MYSQL_PASSWORD
        value: devops@123
     volumes: 
-    - name: emp-vol
-      PersistentVolumeClaim: 
+      - name: emp-vol
+        PersistentVolumeClaim: 
         claimName: emp 
         readOnly: true
       
