@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: db
-    image:mysql: 8.0-debian 
+    image: mysql:8.0-debian 
     resources:
       limits:
         memory: "1024Mi"
@@ -28,7 +28,7 @@ spec:
     - name: emp-vol
       PersistentVolumeClaim: 
         claimName: emp 
-        readOnly: false
+        readOnly: true
       
       
       
