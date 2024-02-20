@@ -52,7 +52,10 @@ spec:
 
           ports:
 
-            - containerPort: 27017
+            - containerPort: 27017 
+          volumeMounts:
+            - name: data
+              mountPath: /data/db
 
   volumeClaimTemplates:
 
