@@ -16,5 +16,11 @@ spec:
         cpu: "500m" 
     args: 
      - sleep
-     - 1d
+     - 1d 
+    env: 
+    - name: learn
+      value From: 
+      configMapkeyRef: 
+        key: key1
+        name: sample-configmap
     
