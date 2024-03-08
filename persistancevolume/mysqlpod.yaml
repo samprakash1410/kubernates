@@ -7,8 +7,8 @@ metadata:
     app: db
 spec:
   containers:
-  - name: db
-    image: mysql:8.0-debian 
+    - name: db
+      image: mysql:8.0-debian 
     resources:
       limits:
         memory: "1024Mi"
